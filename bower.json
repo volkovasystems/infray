@@ -1,0 +1,32 @@
+{
+  "name": "infray",
+  "version": "0.0.0",
+  "description": "One-way array difference.",
+  "main": "infray.deploy.js",
+  "support": "infray.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "one",
+    "way",
+    "array",
+    "difference"
+  ],
+  "homepage": "https://github.com/volkovasystems/infray",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "arid": "^0.25.0",
+    "doubt": "^0.26.0",
+    "een": "^0.18.0",
+    "raze": "^0.29.0",
+    "truly": "^0.18.0"
+  }
+}
