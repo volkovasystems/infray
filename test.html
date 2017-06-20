@@ -1,8 +1,26 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./infray.deploy.js">
-		</script>
+		<title>infray unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./infray.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "infray unit test", function( assert ) {
+
+				assert.deepEqual( infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] ), [ 1, 2 ], "should be deeply equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
