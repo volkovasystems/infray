@@ -70,6 +70,14 @@ const path = require( "path" );
 
 describe( "infray", ( ) => {
 
+	describe( "`infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2 ]", ( ) => {
+
+			assert.deepEqual( infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] ), [ 1, 2 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,6 +87,13 @@ describe( "infray", ( ) => {
 
 describe( "infray", ( ) => {
 
+	describe( "`infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2 ]", ( ) => {
+
+			assert.deepEqual( infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] ), [ 1, 2 ] );
+
+		} );
+	} );
 
 } );
 
@@ -88,6 +103,24 @@ describe( "infray", ( ) => {
 //: @bridge:
 
 describe( "infray", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2 ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ 1, 2 ] );
+
+		} );
+	} );
 
 } );
 

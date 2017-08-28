@@ -66,6 +66,14 @@ const infray = require( "./infray.js" );
 
 describe( "infray", ( ) => {
 
+	describe( "`infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2 ]", ( ) => {
+
+			assert.deepEqual( infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] ), [ 1, 2 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

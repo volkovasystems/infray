@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-28T04:39:47.302Z",
+	"end": "2017-08-28T04:40:24.915Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "infray",
+			"duration": 0,
+			"start": "2017-08-28T04:40:24.618Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "infray",
+			"duration": 117,
+			"start": "2017-08-28T04:40:24.618Z",
+			"end": "2017-08-28T04:40:24.735Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-28T04:40:24.620Z",
+					"end": "2017-08-28T04:40:24.620Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "infray",
+					"associatedTest": "should be equal to [ 1, 2 ]"
+				},
+				{
+					"start": "2017-08-28T04:40:24.734Z",
+					"end": "2017-08-28T04:40:24.734Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "infray",
+					"associatedTest": "should be equal to [ 1, 2 ]"
+				},
+				{
+					"start": "2017-08-28T04:40:24.735Z",
+					"end": "2017-08-28T04:40:24.736Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "infray"
+				}
+			]
+		},
+		{
+			"name": "`infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )`",
+			"duration": 116,
+			"start": "2017-08-28T04:40:24.619Z",
+			"end": "2017-08-28T04:40:24.735Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 1, 2 ]",
+					"start": "2017-08-28T04:40:24.619Z",
+					"end": "2017-08-28T04:40:24.734Z",
+					"duration": 115,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

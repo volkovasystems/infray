@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-10T11:35:25.462Z",
-    "end": "2017-08-10T11:35:25.462Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-28T04:39:45.991Z",
+		"end": "2017-08-28T04:39:45.999Z",
+		"duration": 8
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 1, 2 ]",
+			"fullTitle": "infray `infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )` should be equal to [ 1, 2 ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 1, 2 ]",
+			"fullTitle": "infray `infray( [ 1, 2, 3, 4 ], [ 3, 4, 5, 6 ] )` should be equal to [ 1, 2 ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
